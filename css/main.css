@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  background-color: #E6F1F5; }
+
+.calender {
+  height: 260px;
+  width: 300px;
+  margin: 15% auto;
+  background-color: #D4DFE3; }
+  .calender .header {
+    height: 40px;
+    width: auto;
+    background-color: #1b7e3c;
+    color: #fff; }
+    .calender .header .month-block {
+      margin: 0 auto;
+      padding-top: 0.5px;
+      width: 215px;
+      height: 40px;
+      border-left: 1px solid #4B4E50;
+      border-right: 1px solid #4B4E50;
+      text-align: center; }
+      .calender .header .month-block .month-title {
+        margin: 10px auto; }
+    .calender .header .day-block {
+      height: 30px;
+      background-color: #43b752; }
+      .calender .header .day-block ul {
+        margin: 0;
+        padding: 0 7px 0 7px; }
+        .calender .header .day-block ul li {
+          font-size: 14px;
+          margin: 7px 12px 0 0;
+          list-style-type: none;
+          float: left;
+          text-align: left; }
+          .calender .header .day-block ul li:last-child {
+            margin-right: 0; }
+  .calender .grid {
+    position: absolute;
+    margin-top: 30px; }
+    .calender .grid table {
+      width: 300px;
+      border-collapse: collapse; }
+    .calender .grid td, .calender .grid th {
+      border: 1px solid #999;
+      height: 35px;
+      width: 35px;
+      font-weight: normal;
+      text-align: center; }
+    .calender .grid table tr:first-child th {
+      border-top: 0; }
+    .calender .grid table tr:last-child td {
+      border-bottom: 0; }
+    .calender .grid table tr td:first-child,
+    .calender .grid table tr th:first-child {
+      border-left: 0; }
+    .calender .grid table tr td:last-child,
+    .calender .grid table tr th:last-child {
+      border-right: 0; }
+    .calender .grid .next-month {
+      color: #b3b3b3; }
+    .calender .grid .current-day {
+      color: #1b7e3c; }
+
+/*# sourceMappingURL=main.css.map */
