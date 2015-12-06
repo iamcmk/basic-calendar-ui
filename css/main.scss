@@ -14,28 +14,45 @@ body {
 
 
   .header {
+    position: absolute;
     height: 40px;
-    width: auto;
+    width: 300px;
     background-color: $month-block-bg;
     color: $primary-type;
 
+
+    .btn {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+    }
+
+    .previous {
+      border-right: 1px solid $dark-grey;
+    }
+
+    .next {
+      border-left: 1px solid $dark-grey;
+      float: right;
+    }
+
     .month-block {
+      position: absolute;
+      display: inline-block;
       margin: 0 auto;
       padding-top: 0.5px;
       width: 215px;
       height: 40px;
-      border-left: 1px solid $dark-grey;
-      border-right: 1px solid $dark-grey;
       text-align: center;
 
-
-      
       .month-title {
         margin: 10px auto;
       }
     }
 
     .day-block {
+      position: relative;
+      margin-top: -5px;
       height: 30px;
       background-color: $day-block-bg;
 
@@ -60,7 +77,7 @@ body {
 
   .grid {
     position: absolute;
-    margin-top: 30px;
+    margin-top: 70px;
 
 
     table {
@@ -76,6 +93,7 @@ body {
       text-align: center;
     }
 
+    //Removes outer border on grid
     table tr:first-child th {
       border-top: 0;
     }
@@ -97,8 +115,7 @@ body {
 
     .current-day {
       color: $current-day-green;
+      font-weight: bold;
     }
   }
-
-
 }
