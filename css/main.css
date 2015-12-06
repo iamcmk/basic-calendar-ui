@@ -8,8 +8,7 @@ body {
   margin: 15% auto;
   background-color: #D4DFE3; }
   .calender .header {
-    position: absolute;
-    height: 35px;
+    height: 40px;
     width: 300px;
     background-color: #1b7e3c;
     color: #fff; }
@@ -17,16 +16,23 @@ body {
       display: inline-block;
       height: 30px;
       width: 40px;
+      background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      background-position: center;
       text-align: center;
       padding-top: 10px;
-      padding-bottom: -10px; }
+      padding-bottom: -10px;
+      border-right: 1px solid #4B4E50; }
       .calender .header .btn:hover {
         opacity: 0.7;
         cursor: pointer; }
-    .calender .header .previous {
-      border-right: 1px solid #4B4E50; }
     .calender .header .next {
-      border-left: 1px solid #4B4E50;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
       float: right; }
     .calender .header .month-block {
       position: absolute;
@@ -34,7 +40,7 @@ body {
       margin: 0 auto;
       padding-top: 0.5px;
       width: 215px;
-      height: 40px;
+      height: 30px;
       text-align: center; }
       .calender .header .month-block .month-title {
         margin: 10px auto; }
@@ -55,8 +61,7 @@ body {
           .calender .header .day-block ul li:last-child {
             margin-right: 0; }
   .calender .grid {
-    position: absolute;
-    margin-top: 65px; }
+    display: inline-block; }
     .calender .grid table {
       width: 300px;
       border-collapse: collapse; }
