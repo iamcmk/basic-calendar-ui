@@ -3,26 +3,44 @@ body {
   background-color: #E6F1F5; }
 
 .calender {
-  height: 260px;
+  height: 255px;
   width: 300px;
   margin: 15% auto;
   background-color: #D4DFE3; }
   .calender .header {
-    height: 40px;
-    width: auto;
+    position: absolute;
+    height: 35px;
+    width: 300px;
     background-color: #1b7e3c;
     color: #fff; }
+    .calender .header .btn {
+      display: inline-block;
+      height: 30px;
+      width: 40px;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: -10px; }
+      .calender .header .btn:hover {
+        opacity: 0.7;
+        cursor: pointer; }
+    .calender .header .previous {
+      border-right: 1px solid #4B4E50; }
+    .calender .header .next {
+      border-left: 1px solid #4B4E50;
+      float: right; }
     .calender .header .month-block {
+      position: absolute;
+      display: inline-block;
       margin: 0 auto;
       padding-top: 0.5px;
       width: 215px;
       height: 40px;
-      border-left: 1px solid #4B4E50;
-      border-right: 1px solid #4B4E50;
       text-align: center; }
       .calender .header .month-block .month-title {
         margin: 10px auto; }
     .calender .header .day-block {
+      position: relative;
+      margin-top: -5px;
       height: 30px;
       background-color: #43b752; }
       .calender .header .day-block ul {
@@ -38,7 +56,7 @@ body {
             margin-right: 0; }
   .calender .grid {
     position: absolute;
-    margin-top: 30px; }
+    margin-top: 65px; }
     .calender .grid table {
       width: 300px;
       border-collapse: collapse; }
@@ -61,6 +79,7 @@ body {
     .calender .grid .next-month {
       color: #b3b3b3; }
     .calender .grid .current-day {
-      color: #1b7e3c; }
+      color: #1b7e3c;
+      font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */
