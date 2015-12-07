@@ -1,5 +1,4 @@
 # basic-calendar-ui
 A basic calendar ui for training
 
-
-Quick view : http://codepen.io/anon/pen/RrwdxB
+Design taken from : http://www.freepik.com/free-psd/green-calendar-psd-material_688226.htm
